@@ -8,14 +8,9 @@
 // Explain:
 function createBase(integer) {
   // TODO
-  
+  return (input) => {
+    return integer + input
+  }  
 };
 
-// createBase.prototype.subtractTwenty = (val) => {
-//   return this.base = base - val;
-// }
-
-// createBase.prototype.addTen = (val) => {
-//   return this.base = base + val;
-// }
 module.exports = createBase;

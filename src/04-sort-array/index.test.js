@@ -9,7 +9,6 @@ describe('sortArray', () => {
     const arrStub = [12, 21, -3, 14, 5, 62, 9, -12, 1, -3, 62];
     const expectedResult = [-12, -3, -3, 1, 5, 9, 12, 14, 21, 62, 62];
     const actual = sortArray(arrStub);
-    console.log(actual);
     expect(actual).toEqual(expectedResult);
   });
 
