@@ -8,8 +8,9 @@ describe('sortArray', () => {
   it('sorts an Array of integers correctly', () => {
     const arrStub = [12, 21, -3, 14, 5, 62, 9, -12, 1, -3, 62];
     const expectedResult = [-12, -3, -3, 1, 5, 9, 12, 14, 21, 62, 62];
-
-    expect(sortArray(arrStub)).toEqual(expectedResult);
+    const actual = sortArray(arrStub);
+    console.log(actual);
+    expect(actual).toEqual(expectedResult);
   });
 
   it('throws a TypeError when the input is not an Array of integers', () => {
@@ -24,6 +25,7 @@ describe('sortArray', () => {
       [3, undefined],
       [4.6, 1.234, 9.1],
       [1, 2, Infinity, 3],
+      [3.6, 6.9]
     ];
 
     invalidInputs.forEach(invalidInput =>

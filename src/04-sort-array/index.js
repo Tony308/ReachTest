@@ -12,4 +12,23 @@
 
 module.exports = function sortArray(arr) {
   // TODO
-};
+
+  arr.forEach((integer) => {
+    const isNotInteger = !Number.isInteger(integer);
+    if (isNotInteger) {
+      throw new TypeError("wtf");
+    }
+
+  });
+
+  for (let x = 0; x < arr.length; x++) {
+    for (let y = x + 1; y < arr.length; y++) {
+      if (arr[y] < arr[x]) {
+        let temp = arr[x];
+        arr[x] = arr[y];
+        arr[y] = temp;
+      }
+    }
+  }
+  return arr;
+};  
