@@ -34,6 +34,18 @@ The expected output is:
 }
  */
 
+const fetch = require('node-fetch');
+
 module.exports = async function fetchLukeSkywalker() {
   // TODO
+  const res = await fetch("https://swapi.dev/api/people/1/", {
+      method: "GET",
+      headers: {
+        "Content-Type": "applciation/json",
+        "Accept": "application/json"
+      }
+  })
+  const body = await res.json();
+  return body;
+
 };

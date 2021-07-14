@@ -5,9 +5,9 @@
  */
 
 /**
- * Average and worst case time complexity (Big-O) of my function is: O(n)
+ * Average and worst case time complexity (Big-O) of my function is: O(1) and O(n)
  * Explain: accessing and inserting into array is O(1) but unshift() includes 
- * re-assigning indexes
+ * re-assigning indexes which makes it O(n). But, most cases it will be O(1).
  *
  */
 function reverseWordsInSentence(input) {
