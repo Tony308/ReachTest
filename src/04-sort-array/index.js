@@ -7,9 +7,12 @@
  *   - Not required, but major bonus points awarded
  */
 
-// Average and worst case time complexity (Big-O) of my function is:
-// Explain:
 
+/** Average and worst case time complexity (Big-O) of my function is: O(n log(n)), O(n^2)
+  * Explain: Bubble sort used which has average O(n log(n)) and worst O(n^2). 
+  * Initial loop checking for integers is O(n) based on array size and 
+  * doesn't impact time complexity too much compared to the bubble sort. 
+ */
 module.exports = function sortArray(arr) {
   // TODO
 
